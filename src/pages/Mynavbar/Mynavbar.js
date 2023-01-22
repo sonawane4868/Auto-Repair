@@ -11,13 +11,13 @@ import Aos from 'aos';
 
 
 export default function Mynavbar() {
-  useEffect(()=>{
+  useEffect(() => {
     Aos.init();
-  },[])
+  }, [])
   return (
-    <Navbar bg="transparent" expand="lg"  fixed='top' className='navbar my-0 py-0'>
+    <Navbar bg="transparent" expand="lg" fixed='top' className='navbar my-0 py-0'>
       <Container fluid>
-        <Navbar.Brand href="#"><img src='./logo.png' className='logo'  data-aos="fade-right" data-aos-delay="1000"/></Navbar.Brand>
+        <Navbar.Brand href="#"><img src='./logo.png' className='logo' data-aos="fade-right" data-aos-delay="1000" /></Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll" >
           <Nav
@@ -33,14 +33,15 @@ export default function Mynavbar() {
             <Link to='Services' className='Link'>SERVICES</Link>
             <Link to='Contact' className='Link'>CONTACT</Link>
             <Link to='Contact' className='Link1'>Logged</Link>
-           
-        
-            
+
+
+
           </Nav>
-          <Link to="Signin" data-aos="fade-left" data-aos-delay="1000"><button className='btn btn-success  me-2 my-2 py-2 px-2'>SignIn</button></Link>
-        <Link to='Signup' data-aos="fade-left" data-aos-delay="1000"><button className='btn btn-primary  my-2 me-5 py-2 px-2'>SignUp</button></Link>
+          <Link to="Signin" data-aos="fade-left" data-aos-delay="1000"><button className='btn btn-success  me-2 my-2 py-2 px-2'>Sign In</button></Link>
+          <Link to='Signup' data-aos="fade-left" data-aos-delay="1000"><button className='btn btn-primary  my-2 me-5 py-2 px-2'>Sign Up</button></Link>
         </Navbar.Collapse>
       </Container>
     </Navbar>
   )
 }
+
